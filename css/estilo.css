@@ -1,0 +1,27 @@
+body{
+    background-color: whitesmoke;
+    height: 100vh;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.cardDentroCard{
+    height: 80%;
+    background-color: white;
+}
+
+.header{
+    height: 10%;
+    background-color: rgb(235, 232, 232);
+}
+
+.Footer{
+    height: 10%;
+    background-color: rgb(235, 232, 232);
+}

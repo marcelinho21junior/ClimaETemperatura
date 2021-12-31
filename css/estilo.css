@@ -1,27 +1,48 @@
 body{
-    background-color: whitesmoke;
+    background-color: rgb(224, 224, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 100vh;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 10%;
+    width: 30%;
+    background-color: rgb(194, 192, 192);
 }
 
 .card{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
-    height: 100%;
-}
-
-.cardDentroCard{
+    flex-direction: column;
     height: 80%;
+    width: 30%;
     background-color: white;
 }
 
-.header{
-    height: 10%;
-    background-color: rgb(235, 232, 232);
+.cardTemperaturaLetra{
+    background-color: yellow;
+    font-size:50px;
+    width: 50%;
+    height: 15%;
+    text-align: center;
+    justify-content: center;
+    font-weight: 700;
 }
 
-.Footer{
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 10%;
-    background-color: rgb(235, 232, 232);
+    width: 30%;
+    background-color: rgb(194, 192, 192);
 }

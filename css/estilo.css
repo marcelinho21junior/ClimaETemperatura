@@ -36,6 +36,10 @@ body{
     font-size: 20px;
 }
 
+.cardCidadeEDataData{
+    font-weight: 600;
+}
+
 .cardTemperaturaLetra{
     background-color: rgb(240, 240, 239);
     font-size:50px;
@@ -54,12 +58,45 @@ body{
     width: 100%;
 }
 
-.footer{
+.CardClimaETemperaturaPertoFooter{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+    height: 20%;
+}
+
+.CardClimaETemperaturaPertoFooterClima{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.CardClimaETemperaturaPertoFooterTemperatura{
+    font-weight: 600;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
     height: 10%;
     width: 30%;
     background-color: rgb(194, 192, 192);
+}
+
+.FooterInput{
+    height: 50%;
+    width: 60%;
+    background-color: white;
+}
+
+.FooterButton{
+    height: 60%;
+    width: 10%;
+    background-color: rgb(194, 192, 192);
+}
+
+.fa-solid fa-magnifying-glass{
+    color: tomato;
 }

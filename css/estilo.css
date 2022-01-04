@@ -15,7 +15,7 @@ body{
 }
 
 .card1{
-    display: none;
+    display: flex;
     align-items:center;
     justify-content:space-around;
     flex-direction: column;
@@ -92,8 +92,12 @@ body{
 
 /*----------------------------parte 2--------------------------------*/
 .card2{
+    display: none;
+     justify-content:center;
+    align-items: center;
+    flex-direction: column;
     height: 100%;
-    background-color: violet;
+    background-color: white;
 }
 
 .card2TempClimaCidade{
@@ -102,17 +106,21 @@ body{
     align-items: center;
     flex-direction: column;
     height: 80%;
-    background-color: tomato;
 }
 
 .Card2img{
+    display: flex;
+    justify-content:center;
+    align-items: center;
     width: 90%;
     height: 100%;
-    background-color: turquoise;
 }
 
 .imgcard2{
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }
 
 .card2TempClimaCidadeTemperaturaClima{
@@ -121,20 +129,17 @@ body{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    background-color: yellow;
 }
 
 .card2TempClimaCidadeTemperaturaClima .temperatura{
     font-size: 50px;
     font-weight:bold;
-    background-color: yellowgreen;
     
 }
 
 .card2TempClimaCidadeTemperaturaClima .clima{
     font-size: 20px;
     font-weight:normal;
-    background-color: yellowgreen;
 }
 
 .card2TempClimaFooter{
@@ -143,7 +148,7 @@ body{
     align-items: center;
     flex-direction: row;
     height: 20%;
-    background-color: rgb(108, 190, 40);
+    width: 80%;
 }
 
 .card2TempClimaFooterColuna{
@@ -152,6 +157,23 @@ body{
     align-items: center;
     flex-direction: row;
     height: 100%;
-    width: 1000%;
-    background-color: yellow;
+    width: 100%;
+}
+
+.card2TempClimaFooterImg{
+    height: 40px;
+}
+
+.card2TempClimaFooterInfo{
+
+}
+
+.linhavertical{
+    height: 50px;
+    border-right: 1px solid rgb(105, 103, 103);
+}
+
+.linhahorizontal{
+    width: 300px;
+    border: 1px solid rgb(105, 103, 103);
 }

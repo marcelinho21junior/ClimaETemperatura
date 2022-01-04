@@ -105,6 +105,16 @@ body{
     background-color: tomato;
 }
 
+.Card2img{
+    width: 90%;
+    height: 100%;
+    background-color: turquoise;
+}
+
+.imgcard2{
+
+}
+
 .card2TempClimaCidadeTemperaturaClima{
     display: flex;
     justify-content:center;
@@ -119,6 +129,12 @@ body{
     font-weight:bold;
     background-color: yellowgreen;
     
+}
+
+.card2TempClimaCidadeTemperaturaClima .clima{
+    font-size: 20px;
+    font-weight:normal;
+    background-color: yellowgreen;
 }
 
 .card2TempClimaFooter{

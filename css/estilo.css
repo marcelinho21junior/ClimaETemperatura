@@ -1,3 +1,141 @@
+body{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(65, 65, 243);
+    height: 100vh;
+}
+
 .card{
-    background-color: rgb(81, 81, 252);
+    height: 70%;
+    width: 30%;
+    background-color: white;
+    margin-bottom: 100px;
+}
+
+.card1{
+    display: none;
+    align-items:center;
+    justify-content:space-around;
+    flex-direction: column;
+    height: 100%;
+    background-color: white;
+}
+
+.card header{
+    cursor: pointer;
+    font-size: 30px;
+    color: turquoise;
+    padding: 30px;
+}
+
+.card1DigiteEImput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+}
+
+.Card1DigiteNome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 40%;
+    width: 80%;
+}
+
+.Card1DigiteNomePendente{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(142, 236, 113);
+    text-align: center;
+    height: 40%;
+    width: 80%;
+}
+
+.Card1DigiteNomeError{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 115, 111);
+    text-align: center;
+    height: 40%;
+    width: 80%;
+}
+
+.Card1InputDigiteNome{
+    background-color: white;
+    text-align: center;
+    height: 40%;
+    width: 79%;
+    font-size: 20px;
+}
+
+.card1Button{
+    background-color: rgb(65, 65, 243);
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    height: 20%;
+    width: 80%;
+}
+
+/*----------------------------parte 2--------------------------------*/
+.card2{
+    height: 100%;
+    background-color: violet;
+}
+
+.card2TempClimaCidade{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+    background-color: tomato;
+}
+
+.card2TempClimaCidadeTemperaturaClima{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: yellow;
+}
+
+.card2TempClimaCidadeTemperaturaClima .temperatura{
+    font-size: 50px;
+    font-weight:bold;
+    background-color: yellowgreen;
+    
+}
+
+.card2TempClimaFooter{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 20%;
+    background-color: rgb(108, 190, 40);
+}
+
+.card2TempClimaFooterColuna{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    width: 1000%;
+    background-color: yellow;
 }

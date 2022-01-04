@@ -5,15 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CLIMA TEMPO</title>
+    <link rel='stylesheet' href='../css/estilo.css'>
 </head>
 <body>
     <div class="card">
-        <header>CLIMA E TEMPERATURA</header>
-        <div>
-            <p>Por favor, digite o nome de uma cidade</p>
-            <input type="text" placeholder="Digite o nome da cidade">
-            <button>Pesquisar a localização</button>
-        </div>
+       <header>Clima e Tempo</header>
+       <!--parte 1-->
+       <div class="card1">
+            <div class="card1DigiteEImput">
+                <p class="Card1DigiteNomeError">Digite o nome de uma cidade</p>
+                <input class="Card1InputDigiteNome" type="text" placeholder="nome da cidade">
+            </div>
+                <button class="card1Button">Pesquisar cidade</button>
+       </div>
+       <!--parte 2-->
+       <div class="card2">
+            <div class="card2TempClimaCidade">
+                <div>
+                    img
+                </div>
+                <div class="card2TempClimaCidadeTemperaturaClima">
+                    <p class="temperatura">13C</p>
+                    <p>Frio</p>
+                </div>
+                <div>
+                    <p>LORENA,brasil</p>
+                </div>
+            </div>
+            <div  class="card2TempClimaFooter">
+                <div class="card2TempClimaFooterColuna"> 
+                    <div>
+                        <p>img</p>
+                    </div>
+                    <div>
+                        <p>17C</p>
+                        <p>temperatura</p>
+                    </div>
+                </div>
+                <div  class="card2TempClimaFooterColuna">
+                    <div>
+                        <p>img</p>
+                    </div>
+                    <div>
+                        <p>80%</p>
+                        <p>Umidade</p>
+                    </div>
+                </div>
+            </div>
+       </div>
     </div>
 </body>
 </html>

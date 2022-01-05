@@ -40,7 +40,7 @@ body{
 }
 
 .Card1DigiteNome{
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -55,10 +55,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(142, 236, 113);
+    background-color: rgb(165, 250, 239);
     text-align: center;
     height: 40%;
     width: 80%;
+    border-radius: 10px;
 }
 
 .Card1DigiteNomeError{
@@ -67,10 +68,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(236, 115, 111);
+    background-color: rgb(250, 171, 168);
     text-align: center;
     height: 40%;
     width: 80%;
+    border-radius: 10px;
 }
 
 .Card1InputDigiteNome{

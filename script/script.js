@@ -48,7 +48,7 @@ function weatherDetails(info){
         cardtext.innerText = `${cardinput.value} não é um nome de cidade válido`
     }else{
         cardtext.classList.remove("Card1DigiteNomePendente","Card1DigiteNomeError");
-        card.classList.add()
+        card.classList.add("active")
         console.log(info)
     }
 }

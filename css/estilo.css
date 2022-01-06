@@ -141,10 +141,20 @@ body{
     width: 100%;
 }
 
+.temp{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
 .card2TempClimaCidadeTemperaturaClima .temperatura{
     font-size: 50px;
     font-weight:bold;
-    
+}
+
+.card2TempClimaCidadeTemperaturaClima .deg{
+    font-size: 50px;
+    font-weight:bold;
 }
 
 .card2TempClimaCidadeTemperaturaClima .clima{

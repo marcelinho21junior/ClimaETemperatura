@@ -47,6 +47,18 @@ function weatherDetails(info){
     if(info.cod == "404"){
         cardtext.innerText = `${cardinput.value} não é um nome de cidade válido`
     }else{
+        //propriedades e valores vindo de cada objeto da api
+        const city = info.name;
+        const country = info.sys.country;
+        const{description,id} = info.weather[0];
+        const{feels_like,humidity,temp} = info.main
+
+        //passar os valores particulares para cada elemento da api para o sistema
+        card.querySelector('.temp .temperatura').innerText = temp;
+        card.querySelector('.clima').innerText = description;
+        card.querySelector('.localizacao span').innerText = `${city}, ${country}`;
+        card.querySelector('.temp .temperatura').innerText = feels_like;
+
         cardtext.classList.remove("Card1DigiteNomePendente","Card1DigiteNomeError");
         card.classList.add("active")
         console.log(info)

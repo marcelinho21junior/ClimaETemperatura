@@ -4,6 +4,7 @@ cardtext = card1.querySelector(".Card1DigiteNome"),
 cardinput = card1.querySelector('.Card1InputDigiteNome')
 card1Button = card1.querySelector(".card1Button")
 wicon = document.querySelector(".Card2img img")
+header = card.querySelector("header")
 
 var api;
 
@@ -28,10 +29,13 @@ function onSuccess(position){
 }
 
 function onError(error){
-
     cardtext.innerText = error.message;
     cardtext.classList.add("Card1DigiteNomeError")
 }
+
+header.addEventListener("click", () => {
+    card.classList.remove("active")
+})
 
 function requestApi(city){
     api = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${`48e2b78c34f243619dcbfe87d8e567aa`}`;
@@ -53,7 +57,7 @@ function weatherDetails(info){
         const city = info.name;
         const country = info.sys.country;
         const{description,id} = info.weather[0];
-        const{feels_like,humidity,temp} = info.main
+        const{feels_like,humidity,temp,temp_max,temp_min} = info.main
 
         if(id == 800){
             wicon.src = "../img/ensolarado.JPG";
@@ -75,6 +79,8 @@ function weatherDetails(info){
         card.querySelector('.localizacao span').innerText = `${city}, ${country}`;
         card.querySelector('.temp .numb-2').innerText = Math.floor(feels_like);
         card.querySelector('.details span').innerText = `${humidity}%`;
+        card.querySelector('.card2TempClimaFooterColuna2 span').innerText =Math.floor(temp_max);
+        card.querySelector('.card2TempClimaFooterColuna2 .min').innerText = Math.floor(temp_min);
 
         cardtext.classList.remove("Card1DigiteNomePendente","Card1DigiteNomeError");
         card.classList.add("active")
